@@ -29,6 +29,6 @@ newVersion=$( bash "${scriptFolder}/semvertool.sh" bump "$bumpType" "$currentVer
 
 sed -r -i "s/(version = ).*/\1\"${newVersion}\"/g" -- pyproject.toml
 # and manually set __version__ in __init__.py to not rely on nbdev
-sed -r -i "s/(__version__ = ).*/\1\"${newVersion}\"/g" -- common_nb_preprocessors/__init__.py
+sed -r -i "s/(__version__ = ).*/\1\"${newVersion}\"/g" -- nb_common_preprocessors/__init__.py
 # Files will be commited via `auto` tool
 git add .
