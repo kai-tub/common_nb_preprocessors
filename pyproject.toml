@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "common_nb_preprocessors"
-version = "0.1.0"
+version = "0.0.10"
 description = "Inject metadata directly into jupyter notebook cells via _magic_ comments."
 authors = ["Kai Norman Clasen <snakemap_navigation@protonmail.com>"]
 license = "Apache-2.0"
