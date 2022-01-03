@@ -24,6 +24,7 @@ jobs:
           poetry-version: 1.1.12
       - name: Install library
         run: poetry install
+      - run: poetry shell
       - name: Check if all notebooks are cleaned
         # Local tests will usually have uncommited changes
         if: ${{ !env.ACT }}
