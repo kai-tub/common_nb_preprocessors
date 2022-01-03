@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "common_nb_preprocessors"
+version = "0.1.0"
+description = "Inject metadata directly into jupyter notebook cells via _magic_ comments."
+authors = ["Kai Norman Clasen <snakemap_navigation@protonmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/kai-tub/common_nb_preprocessors"
+repository = "https://github.com/kai-tub/common_nb_preprocessors"
+# documentation = "https://kai-tub.github.io/common_nb_preprocessors/"
+keywords = ["jupyter", "notebook", "nbconvert", "preprocessor", "tags"]
+include = [
+    "LICENSE",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+nbconvert = "^6.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = "*"
+isort = "*"
+ipykernel = "^6.6.0"
+nbmake = "^1.1"
+nbstripout = "^0.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
