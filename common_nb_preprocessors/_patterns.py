@@ -1,5 +1,7 @@
 import re
 
+__all__ = ["build_prefixed_regex_pattern", "build_prefixed_regex_pattern_with_value"]
+
 
 def build_prefixed_regex_pattern(prefix: str, key_term: str) -> re.Pattern:
     """
