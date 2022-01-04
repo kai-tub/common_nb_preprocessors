@@ -7,6 +7,13 @@ from ._patterns import (
     build_prefixed_regex_pattern_with_value,
 )
 
+__all__ = [
+    "MetaDataInjectorPreprocessor",
+    "GlobalMetaDataInjectorPreprocessor",
+    "JUPYTER_BOOK_CODE_TAGS",
+    "jupyter_book_metadata_injector",
+]
+
 
 class MetaDataInjectorPreprocessor(Preprocessor):
     """

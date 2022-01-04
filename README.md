@@ -11,6 +11,10 @@ Set the function in the [nb_custom_formats](https://jupyterbook.org/file-types/j
 sphinx:
   config:
     nb_custom_formats:
+        # as of now, this will raise an error because this option doesn't overwrite the default behaviour
+        # See: https://github.com/executablebooks/jupyter-book/issues/1586
         .ipynb:
             - common_nb_preprocessors.metadata_injector.jupyter_book_metadata_injector
+            # Currently, requires an option argument to work
+            - remove_line: True
 ```

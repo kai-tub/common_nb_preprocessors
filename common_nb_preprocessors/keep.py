@@ -1,6 +1,8 @@
 from traitlets import Set, Unicode
 from nbconvert.preprocessors import Preprocessor
 
+__all__ = ["TagsKeepPreprocessor"]
+
 
 class TagsKeepPreproccesor(Preprocessor):
     """
